@@ -1,6 +1,6 @@
-# Armário Eletrônico com Acesso por Biometria e Senha
+# Dispensário Eletrônico com Acesso por Biometria e Senha
 
-Projeto acadêmico desenvolvido em parceria com o **Hospital Mário Pena**. É um armário eletrônico com gavetas em MDF, destinado ao uso no hospital. O acesso é liberado apenas após autenticação por **biometria** ou **senha digitada no teclado**.
+Projeto acadêmico desenvolvido em parceria com o **Hospital Mário Pena**. É um dispensário eletrônico com gavetas em MDF, destinado ao uso no hospital. O acesso é liberado apenas após autenticação por **biometria** ou **senha digitada no teclado**.
 
 > **Status:** em desenvolvimento (estrutura física montada, código em finalização).
 
@@ -26,7 +26,6 @@ Projeto acadêmico desenvolvido em parceria com o **Hospital Mário Pena**. É u
 | 1 | Tranca eletrônica | Trava da porta/gaveta |
 | 1 | Módulo relé | Aciona a tranca (12 V) com sinal do Arduino |
 | 1 | Fonte 12 V 3 A | Alimentação do sistema |
-| 1 | Regulador de tensão | Reduz a tensão da fonte para os componentes de menor tensão |
 | 1 | LED verde | Indica acesso liberado |
 | 1 | LED vermelho | Indica acesso negado |
 | 2 | Resistores de 330 Ω | Limitam a corrente dos LEDs |
@@ -35,9 +34,11 @@ Projeto acadêmico desenvolvido em parceria com o **Hospital Mário Pena**. É u
 ### Estrutura
 
 - MDF de 3 mm cortado a laser, em chapas de 1 m × 1 m (área de corte de 900 × 900 mm)
-- 10 chapas ao todo: 4 do armário e 6 das gavetas (1 chapa por gaveta); os 12 trilhos cabem na sobra de uma chapa
+- 10 chapas ao todo: 4 do dispensário e 6 das gavetas (1 chapa por gaveta); os 12 trilhos cabem na sobra de uma chapa
 - 6 gavetas, cada uma com 2 trilhos (12 trilhos)
-- Parafusos, cola e acabamento (**a preencher**)
+- 4 dobradiças douradas (micro dobradiça 15 × 11 mm, para caixa de MDF), fixadas com parafusos, apenas nas portas
+- Cola super bonder para a união das peças
+- Acabamento (**a preencher**)
 
 A lista completa está em [`docs/lista-de-materiais.md`](docs/lista-de-materiais.md).
 
@@ -45,7 +46,7 @@ A lista completa está em [`docs/lista-de-materiais.md`](docs/lista-de-materiais
 
 | Parte | C × A × L |
 |-------|-----------|
-| Armário completo | 75 × 70 × 30 cm |
+| Dispensário completo | 75 × 70 × 30 cm |
 | Parte das gavetas | 50 × 70 × 30 cm |
 | Parte da eletrônica | 25 × 70 × 30 cm |
 
@@ -53,13 +54,13 @@ Os arquivos de corte a laser (oficiais) estão na pasta [`cad/`](cad/), com a li
 
 | Arquivo | Conteúdo | Quantas vezes cortar |
 |---------|----------|----------------------|
-| [`cad/armario/estrutura_gavetario.dxf`](cad/armario/estrutura_gavetario.dxf) | Corpo do armário (fundo, laterais, divisória, frontal menor, porta, topo e base), em 4 chapas | 1 vez |
+| [`cad/armario/estrutura_gavetario.dxf`](cad/armario/estrutura_gavetario.dxf) | Corpo do dispensário (fundo, laterais, divisória, frontal menor, porta, topo e base), em 4 chapas | 1 vez |
 | [`cad/gavetas/gaveta.dxf`](cad/gavetas/gaveta.dxf) | **1 gaveta** | **6 vezes** (o projeto tem 6 gavetas) |
 | [`cad/gavetas/trilhos.dxf`](cad/gavetas/trilhos.dxf) | 12 trilhos (2 por gaveta) | 1 vez |
 
 > ⚠️ O arquivo da gaveta tem **apenas uma gaveta**. Corte-o **6 vezes** para obter as 6 gavetas do projeto.
 
-![Estrutura do armário](cad/previews/estrutura_gavetario.png)
+![Estrutura do dispensário](cad/previews/estrutura_gavetario.png)
 
 ![Gaveta (cortar 6 vezes)](cad/previews/gaveta.png)
 
@@ -101,11 +102,15 @@ Passo a passo com fotos em [`docs/montagem.md`](docs/montagem.md).
 
 ## Equipe
 
-- Itallo
-- (adicionar demais integrantes)
+- [Itallo](https://github.com/SEU-USUARIO) <!-- troque SEU-USUARIO pelo seu usuário do GitHub -->
+- [Lara](https://github.com/Laragranato17)
+- [Isabella](https://github.com/IsabellaAssiss)
+- Augusto (GitHub a adicionar)
+- [Cauan](https://github.com/Caua-Caldeira-harlle)
 
 **Instituição:** IBMEC
-**Disciplina/Professor:** a preencher
+**Disciplina:** Projeto de Sistemas Embarcados
+**Professor:** Osmar
 **Parceiro:** Hospital Mário Pena
 
 ## Licença
