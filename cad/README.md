@@ -38,8 +38,8 @@ Camadas: `CORTE` (cortes), `GRAVAR` (marcações **gravadas**, não cortadas), `
 | 4 | Base | 750 × 300 |
 
 - **Fundo:** furo de Ø 70 mm na parte da eletrônica, com 4 furos de Ø 2,5 mm em volta (quadrado de 60 mm entre centros). Por ele passa o cabo da fonte para fora do dispensário, até a tomada. A tampa redonda de `trilhos_e_mais.dxf` é fixada sobre ele para fechar o buraco e dar acabamento; o rasgo até o centro deixa o cabo passar.
-- **Porta:** 2 furos de Ø 4,2 mm (25 mm entre centros), a 23 mm da borda esquerda, com uma marcação gravada de 21 × 36 mm em volta. Eles marcam onde fica a peça de metal da tranca (a parte que prende), que será fixada com parafuso ou abraçadeira de nylon (enforca-gato), ainda a definir.
-- **Dobradiças:** na borda direita da porta há 3 marcações gravadas de 15 × 15,5 mm, uma para cada uma das 3 dobradiças.
+- **Porta:** 2 furos de Ø 4,2 mm (25 mm entre centros), a 23 mm da borda esquerda, com uma marcação gravada de 21 × 36 mm em volta. Eles marcam onde fica a peça de metal da tranca (a parte que prende), fixada com parafusos e cola super bonder.
+- **Dobradiças:** na borda direita da porta há 3 marcações gravadas de 15 × 15,5 mm, feitas para as dobradiças pequenas da versão anterior. O projeto final usa 2 dobradiças de 38 × 36 mm.
 - **Encaixes:** as peças se unem por dentes; os 34 rasgos de 3 × 20 mm (18 no fundo e 16 entre o topo e a base) recebem a divisória e as demais peças. As medidas válidas são as dos arquivos.
 - A porta é um retângulo liso; as demais peças têm bordas com dentes de encaixe.
 
@@ -52,13 +52,13 @@ Cada corte do arquivo gera **uma gaveta** com estas peças:
 | Peça | Medida (mm) | Qtd por gaveta |
 |------|-------------|----------------|
 | Fundo | 285 × 494 | 1 |
-| Lateral (com rasgo de puxador 22 × 120 mm) | 98 × 494 | 1 |
-| Lateral | 106 × 494 | 1 |
-| Painel | 285 × 98 | 2 |
-| Painel | 282 × 98 | 1 |
-| Rasgos de encaixe | 3 × 39,9 mm (4, no fundo) e 3 × 31,7 mm (2, nas laterais) | 6 |
+| Frente (com rasgo de puxador 22 × 120 mm) | 98 × 494 | 1 |
+| Traseira (8 mm mais alta que a frente, é nela que o dente do trilho segura) | 106 × 494 | 1 |
+| Lateral | 285 × 98 | 2 |
+| Divisória (formato inclinado) | 282 × 98 | 1 |
+| Rasgos de encaixe da divisória | 3 × 39,9 mm (4, no fundo) e 3 × 31,7 mm (1 na frente e 1 na traseira) | 6 |
 
-Para as **6 gavetas**: 36 peças grandes (6 fundos, 12 laterais, 18 painéis).
+A divisória vai nas 6 gavetas. Para as **6 gavetas**: 36 peças (6 fundos, 6 frentes, 6 traseiras, 12 laterais e 6 divisórias).
 
 ![Gaveta](previews/gaveta.png)
 
@@ -66,15 +66,15 @@ Para as **6 gavetas**: 36 peças grandes (6 fundos, 12 laterais, 18 painéis).
 
 | Peça | Medida (mm) | Qtd |
 |------|-------------|-----|
-| Trilho com ponta chanfrada ("bico") | 294 × 13 | 12 (2 por gaveta) |
+| Trilho (trava) com dente na ponta: barra de 6 mm + dente de 7 mm | 294 × 13 | 12 (2 por gaveta) |
 | Tampa do furo do cabo da fonte (rasgo até o centro para o cabo) | Ø 100, 4 furos de Ø 3,2 mm | 1 |
-| Quadrado com furo central (vai por cima da dobradiça para prendê-la na porta) | 25 × 25, furo de Ø 2,5 mm | 4 |
+| Quadrado com furo central (para prender as dobradiças) | 25 × 25, furo de Ø 2,5 mm | 4 |
 
-Os 4 furos da tampa ficam na mesma posição dos 4 furos em volta do furo de Ø 70 mm do fundo.
+Os 4 furos da tampa ficam na mesma posição dos 4 furos em volta do furo de Ø 70 mm do fundo. As alturas de colagem dos trilhos estão em [`docs/montagem.md`](../docs/montagem.md#altura-dos-trilhos).
 
 ![Trilhos e peças extras](previews/trilhos_e_mais.png)
 
 ## Pontos a confirmar
 
-- **Nomes das peças da gaveta:** conferir qual lateral e qual painel é a frente, a traseira e os lados na montagem.
-- **Fixação da tranca:** parafuso ou abraçadeira de nylon (a definir).
+- **Dobradiças:** as marcações gravadas na porta (3 × 15 × 15,5 mm) e os 4 quadrados de 25 × 25 mm foram feitos para as dobradiças pequenas. Com as 2 dobradiças de 38 × 36 mm, confirmar se os quadrados ainda são usados e, se quiser, atualizar o DXF.
+- **Furos da frente da eletrônica:** os furos do teclado, do leitor biométrico e dos LEDs não estão no DXF da frontal menor.
