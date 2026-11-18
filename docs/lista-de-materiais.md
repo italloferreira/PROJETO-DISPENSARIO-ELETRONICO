@@ -38,6 +38,7 @@ A lista completa de peças, com medidas e quantidades, está em [`cad/README.md`
 | Qtd | Item | Uso |
 |-----|------|-----|
 | 2 | Dobradiça de 38 × 36 mm | Porta |
+| 1 | Tranca de chave | Fica na frente da parte da eletrônica |
 | - | Parafusos | Fixar as dobradiças e a peça de metal da tranca |
 | - | Cola super bonder | União das peças e fixação da tranca |
 

@@ -41,6 +41,7 @@ Projeto acadêmico desenvolvido em parceria com o **Hospital Mário Pena**. É u
 - 10 chapas ao todo: 4 do dispensário e 6 das gavetas (1 chapa por gaveta); os trilhos e as peças extras cabem na sobra de uma chapa de gaveta
 - 6 gavetas com divisória, cada uma apoiada em 2 trilhos (12 trilhos)
 - 2 dobradiças de 38 × 36 mm na porta, fixadas com parafusos
+- 1 tranca de chave, na frente da parte da eletrônica
 - Cola super bonder e parafusos na montagem
 - Sem acabamento (MDF cru)
 
